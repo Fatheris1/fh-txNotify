@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>txNotify</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- ANNOUNCEMENT -->
+    <div id="ann" class="ann hidden">
+
+        <div class="ann__corner ann__corner--tl"></div>
+        <div class="ann__corner ann__corner--tr"></div>
+        <div class="ann__corner ann__corner--bl"></div>
+        <div class="ann__corner ann__corner--br"></div>
+
+        <div class="ann__center">
+            <p class="ann__title">SERVER ANNOUNCEMENT!</p>
+            <div class="ann__msg-row">
+                <div class="ann__msg-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <div class="ann__msg-body">
+                    <span class="ann__msg-label">Message · by <span id="ann-author"></span></span>
+                    <p class="ann__msg-text" id="ann-msg"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESTART -->
+    <div id="rst" class="ann ann--rst hidden">
+
+        <div class="ann__corner ann__corner--tl ann__corner--rst"></div>
+        <div class="ann__corner ann__corner--tr ann__corner--rst"></div>
+        <div class="ann__corner ann__corner--bl ann__corner--rst"></div>
+        <div class="ann__corner ann__corner--br ann__corner--rst"></div>
+
+        <div class="ann__center">
+            <div class="ann__title-row">
+                <span class="ann__title ann__title--rst">SERVER RESTART IN</span>
+                <span class="ann__time-badge" id="rst-timer"></span>
+            </div>
+            <div class="ann__msg-row">
+                <div class="ann__msg-icon ann__msg-icon--rst">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18.36 6.64a9 9 0 1 1-12.73 0"/>
+                        <line x1="12" y1="2" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <div class="ann__msg-body">
+                    <p class="ann__msg-text" id="rst-msg"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIRECT MESSAGE -->
+    <div id="dm" class="ann ann--dm hidden">
+
+        <div class="ann__corner ann__corner--tl ann__corner--dm"></div>
+        <div class="ann__corner ann__corner--tr ann__corner--dm"></div>
+        <div class="ann__corner ann__corner--bl ann__corner--dm"></div>
+        <div class="ann__corner ann__corner--br ann__corner--dm"></div>
+
+        <div class="ann__center">
+            <p class="ann__title ann__title--dm">Direct Message</p>
+            <div class="ann__msg-row">
+                <div class="ann__msg-icon ann__msg-icon--dm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <div class="ann__msg-body">
+                    <span class="ann__msg-label ann__msg-label--dm">Message · from <span id="dm-author"></span></span>
+                    <p class="ann__msg-text" id="dm-msg"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WARNING  -->
+    <div id="warn" class="warn hidden">
+        <div class="warn__corner warn__corner--tl"></div>
+        <div class="warn__corner warn__corner--tr"></div>
+        <div class="warn__corner warn__corner--bl"></div>
+        <div class="warn__corner warn__corner--br"></div>
+
+        <div class="warn__top-label">
+            YOU HAVE BEEN <span class="warn__top-accent">WARNED!</span>
+        </div>
+
+        <div class="warn__center">
+            <p class="warn__title">THIS IS A WARNING!</p>
+            <div class="warn__msg-row">
+                <div class="warn__msg-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <div class="warn__msg-body">
+                    <span class="warn__msg-label">Message</span>
+                    <p class="warn__reason" id="warn-reason"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="warn__hold-bottom">
+            <div class="warn__hold-meta">
+                <span class="warn__hold-count">Warning #<span id="warn-count">1</span></span>
+                <span class="warn__hold-sep">·</span>
+                <span class="warn__hold-by">Sent by <span id="warn-hold-author"></span></span>
+            </div>
+            <div class="warn__hold-track">
+                <div class="warn__hold-fill" id="warn-hold-fill"></div>
+            </div>
+            <p class="warn__hint">Hold <span class="warn__hint-key">SPACE</span> to acknowledge</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
