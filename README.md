@@ -9,6 +9,16 @@ Replaces default txAdmin notifications with  NUI.
 
 Warn count is saved per player license.
 
+## Notification types
+
+- Server announcements 
+- Scheduled restart warnings with countdown
+- Direct messages to a specific player
+- Player warnings 
+
+## txAdmin integration
+Works automatically with txAdmin events (announcements, restarts, DMs, warnings)
+
 ## Installation
 1. Dissable default tx admin notifications 
 <img width="1109" height="643" alt="image" src="https://github.com/user-attachments/assets/c2a07ed0-18b5-480f-be06-585cc59a7dd7" />
