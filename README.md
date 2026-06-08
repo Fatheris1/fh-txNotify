@@ -1,6 +1,8 @@
 # fh-txNotify - standalone
 
-<img width="1980" height="1080" alt="fh-txNotify" src="https://github.com/user-attachments/assets/ea20e03b-03f8-44a8-ab5b-7e43ec575fa9" />
+<img width="1980" height="1080" alt="fh-txNotify" src="https://github.com/user-attachments/assets/566b39a4-b136-45d6-961b-65c39e594556" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/9e922c28-5bd8-4ecc-982f-df817e2573c8" />
+
 
 
 Replaces default txAdmin notifications with  NUI.
