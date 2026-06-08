@@ -8,16 +8,18 @@ Replaces default txAdmin notifications with  NUI.
 Warn count is saved per player license.
 
 ## Installation
+1. Dissable default tx admin notifications 
+<img width="1109" height="643" alt="image" src="https://github.com/user-attachments/assets/c2a07ed0-18b5-480f-be06-585cc59a7dd7" />
 
-1. Download and put the folder in your `resources` directory
-2. Add to `server.cfg`:
+2. Download and put the folder in your `resources` directory
+3. Add to `server.cfg`:
 
 ```cfg
 ensure fh-txNotify
 ```
-3. Edit `config.lua` if you want
-4. Restart server
-5. Enjoy ;)
+4. Edit `config.lua` if you want
+5. Restart server
+6. Enjoy ;)
 
 ## Notify Sound
 Replace `ui/notifysound.mp3` with your own file.  
